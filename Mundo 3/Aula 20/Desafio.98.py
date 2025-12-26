@@ -16,6 +16,19 @@ def cond():
         print(j, end=' ')
         sleep(0.1)
 
+
+def concusto(i, f, p, m):
+
+    if m == 0:
+        for k in range(i, f, p):
+            print(k, end=' ')
+        sleep(0.1)
+    else:
+        for k in range(f, i, -p):
+            print(k, end=' ')
+        sleep(0.1)
+
+
 conc()
 cond()
 
@@ -24,9 +37,9 @@ print('\nContagem Customizada')
 i = int(input('Digite o valor de inicio da contagem: '))
 f = int(input('Digite o valor de fim da contagem: '))
 p = int(input('Digite o valor do passo da contagem: '))
-m = int(input('Digite a ordem - 0 P/ Crescente ou 1 P/ Decrescente'))
+m = int(input('Digite a ordem - 0 P/ Crescente ou 1 P/ Decrescente: '))
 
-
+concusto(i, f, p, m)
 
 
 
