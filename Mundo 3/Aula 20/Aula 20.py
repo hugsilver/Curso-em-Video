@@ -66,7 +66,7 @@ soma(b = 4, a = 1)
 soma(7, 2)
 '''
 
-#Empacotamento - Empacotar
+#Empacotamento - Empacotar ou Desempacotamento
 '''
 def contador(*num): # * - Simbolo de desempacotar, quantos vierem nos parametros
     for valor in num:
