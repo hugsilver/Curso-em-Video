@@ -8,6 +8,9 @@ c = float(input('Digite a largura do terreno em metros: '))
 
 areat(l, c)
 
+#Solução Guana
+
+
 
 
 

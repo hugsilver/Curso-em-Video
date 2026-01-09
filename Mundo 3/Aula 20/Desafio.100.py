@@ -12,8 +12,7 @@ def sum():
         if x%2 == 0:
             soma += x 
     print(soma)
-
-        
+     
 lot()
 print(num)   
 sum()
