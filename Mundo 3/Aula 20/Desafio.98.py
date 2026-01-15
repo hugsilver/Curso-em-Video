@@ -1,4 +1,4 @@
-
+"""
 from time import sleep 
 
 i = f = p = m = 0
@@ -12,7 +12,7 @@ def conc():
         
 def cond():
     print('\nContagem Decrescente:')
-    for j in range(10, 0, -2):
+    for j in range(10, -1, -2):
         print(j, end=' ')
         sleep(0.1)
 
@@ -41,7 +41,46 @@ m = int(input('Digite a ordem - 0 P/ Crescente ou 1 P/ Decrescente: '))
 
 concusto(i, f, p, m)
 
+"""
+
+#Método Guana
+
+from time import sleep 
+
+def contador(i, f, p):
+    print('-='*20)
+    print(f'Contagem de {i} até {f} de {p} em {p}')
+    sleep(2.5)
 
 
+    if p < 0:
+        p *= -1
+    if p ==0:
+        p = 1
+
+    if i < f:
+        cont = i
+        while cont <= f:
+            print(f'{cont}', end=' ', flush = True) #Tira o buffer de tela
+            sleep(0.5)
+            cont += p
+        print('FIM!!!')
+    else:
+        cont = i
+        while cont >=f:
+            print(f'{cont}', end = ' ', flush = True)
+            sleep(0.5)
+            cont -= p
+        print('FIM!!!')
 
 
+#Programa Principal
+contador(1, 10, 1)
+contador(10, 0, 2)
+print('-='*20)
+print('Agora é sua vez de personalizar a contagem!!!')
+ini = int(input('Inicio: '))
+fin = int(input('Fim: '))
+passo =  int(input('Passo: '))
+
+contador(ini, fin, passo)
