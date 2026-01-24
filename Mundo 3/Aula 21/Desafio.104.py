@@ -1,12 +1,16 @@
 def leiaint(n):
+
     n = int(n)
-    if n % 2 == 0:
+    print(type(n))
+
+    if type(n) == int:
         return n
     else:
         print('DIGITE UM NÚMERO INTEIRO.')
 
 #Programa Principal
-n = leiaint('Digite um valor inteiro: ')
+valor = input('Digite um valor inteiro: ')
+n = leiaint(valor)
 print(f'Você acabou de digitar o número {n}')
 
 #Ver resolução dessa

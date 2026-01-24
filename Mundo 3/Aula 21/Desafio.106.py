@@ -35,4 +35,4 @@ while True:
     print(fun)
 
 
-#Falta retornar pro menu principal
+#Falta validar para que a ultima função ou biblioteca seja limpa, se der enter ele puxa a ultima
