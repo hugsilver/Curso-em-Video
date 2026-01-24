@@ -2,27 +2,41 @@
 import statistics
 
 def notas(a=0 , b=0, c=0, d=0, sit = 0):
+    """
+    Docstring para notas
+    -> Função para analisar notas e situações de vários alunos
+    :param n: uma ou mais notas dos alunos (aceita várias)
+    :param sit: valor opcional, indicando se deve ou não adicionar a situação
+    :return: dicionário com várias informações sobre a situação da turma
+    """
 
     lista = list()
-    lista.append(a)
-    lista.append(b)
-    lista.append(c)
-    lista.append(d)
-    lista2 = list()
-    lista2.append(max(lista))
-    lista2.append(min(lista))
-    lista2.append(statistics.mean(lista))
-    #print(lista)
+    if a >= 0:
+        lista.append(a)
+    if b >= 0:
+        lista.append(b)
+    if c >= 0:
+        lista.append(c)
+    if d >= 0:
+        lista.append(d)
+
+    med = statistics.mean(lista)
+
+    
+    contador = len(lista)
+    dicionario = dict()
+    dicionario = {'Quantidade': contador, 'Maximo': max(lista), 'Minimo': min(lista), 'Media': med}
 
     if sit == True:
-        if statistics.mean([a, b, c, d])> 6:
-            lista2.append('BOA')
-    return lista2 
+        if med >= 6:
+            dicionario['Situ'] = 'BOA'
+        else:
+            dicionario['Situ'] = 'RUIM'
 
-
+    return dicionario 
 
 #Programa Principal
-resp = notas(8, 7, sit=True)
+resp = notas(8, 2, 3, 9, sit=True)
 print(resp)
 
 
