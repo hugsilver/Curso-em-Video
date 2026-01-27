@@ -1,3 +1,4 @@
+
 def leiaint(n):
 
     #print(type(n))
@@ -27,4 +28,31 @@ n = leiaint(valor)
 
 if n[1] == 1:
     print(f'Você acabou de digitar o número {n[0]}')
+
+
+#Metodo Guana
+
+def leiaInt(msg):
+    ok = False
+    valor = 0
+    while True:
+        n = str(input(msg))
+        if n.isnumeric():
+            valor = int(n)
+            ok = True
+        else:
+            print('\033[0;31mERRO! Digite um número inteiro valido.\033[m')
+            #\033[0;31m - Vermelho - No final \033[m - para desfazer
+        if ok:
+            break
+    return valor
+
+n = leiaInt(input('Digite um número: '))
+print(f'Você acabou de digitar o número: {n}')
+
+
+
+
+
+
 
