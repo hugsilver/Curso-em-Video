@@ -2,6 +2,7 @@ def metade(p, f=1):
     
     if f == True:
         return format(p/2)
+        #Interessante usar uma variavel local para receber o calculo , retornar somente ela
     else:
         return p/2
 
