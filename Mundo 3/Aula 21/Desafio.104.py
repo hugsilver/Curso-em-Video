@@ -1,4 +1,4 @@
-
+"""
 def leiaint(n):
 
     #print(type(n))
@@ -28,7 +28,7 @@ n = leiaint(valor)
 
 if n[1] == 1:
     print(f'Você acabou de digitar o número {n[0]}')
-
+"""
 
 #Metodo Guana
 
