@@ -7,6 +7,7 @@ def leiaInt(n):
         a = int(n)
     except (KeyboardInterrupt, ValueError):
         print('\033[0;31mERRO! Digite um número inteiro valido.\033[m')
+        return 0
     else:
         return n
 
@@ -15,6 +16,7 @@ def leiaFloat(r):
         b = float(r)
     except (KeyboardInterrupt, ValueError):
         print('\033[0;31mERRO! Digite um número real valido.\033[m')
+        return 0
     else:
         return r
 
