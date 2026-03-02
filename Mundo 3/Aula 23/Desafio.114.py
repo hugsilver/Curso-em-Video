@@ -1,17 +1,22 @@
-
+#Trabalhando
 import webbrowser
+import requests
 
-def abrir_site(url: str):
-    
+def abrir_site(url):
     try:
         # Abre em uma nova aba do navegador padrão
-        webbrowser.open_new_tab(url)
-        print(f"Consegui acessar o site do Pudim")
-    except:
+        # webbrowser.open_new_tab(url)
+        resposta = requests.head(url, timeout=5)  # HEAD é mais rápido que GET
+        # return 200 <= resposta.status_code < 400
+    except requests.RequestException:
         print("O site Pudin não está acesivel no momento")
+    else:
+        print(f"Consegui acessar o site do Pudim")
+    finally:
+        print('Obrigado por usar nossos serviços.')
 
-if __name__ == "__main__":
-    site = input('https://pudim.com.br/').strip()
-    abrir_site(site)
+abrir_site('https://pudim.com.br')
+
+
 
 

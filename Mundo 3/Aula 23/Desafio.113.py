@@ -1,4 +1,7 @@
 #Não consegui
+#Falta validar só está indo uma entrada
+#Ver resolução do Guana
+
 def leiaInt(n):
 
     valido = False

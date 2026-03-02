@@ -6,3 +6,6 @@
 #Não perder dados - Salvar em arquivo de texto simples
 #Caso não exista dados na 1° Consulta, dar mensagem que não existe dados cadastrados
 #Criar dois módulos: Cadastro e Consulta
+
+#Iniciar por criar um arquivo de texto e validar se ele ja existe
+
