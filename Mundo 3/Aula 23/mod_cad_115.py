@@ -9,10 +9,10 @@ def cadastro(a = 0, b = 0):
 def valida_id(idade):
     try:
         b = int(idade)
+        return b, True
     except (KeyboardInterrupt, ValueError, TypeError):
         print('\nDigite um valor Inteiro!!!')
-    else:
-        return int(idade) 
+        return None, False
 
     
 

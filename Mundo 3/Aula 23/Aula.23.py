@@ -23,8 +23,8 @@ import uteis
 #Tratar exceções 
 
 #Comando Top - try: e except: Tente algo, se não faça isso
-#Try: 
-#Exception: 
+#Try: Oque pode dar problema
+#Exception: Área da falha, se tentar o de cima, oque pode acontecer
 
 
 

@@ -1,8 +1,7 @@
-
 import os
 
 def cv_arq(base_dir: str, nome_arquivo="dados_clientes.txt"):
-    os.system("cls")
+    #os.system("cls")
     pasta = os.path.dirname(os.path.abspath(base_dir))
     caminho = os.path.join(pasta, nome_arquivo)
 
