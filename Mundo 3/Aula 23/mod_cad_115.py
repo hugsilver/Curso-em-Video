@@ -3,7 +3,9 @@ from mod_arquiv_115 import cv_arq
 
 def cadastro(a = 0, b = 0):
     os.system("cls")
-    cv_arq(base_dir=__file__)
+    ARQ = cv_arq(__file__)
+    with open(ARQ,"a", encoding='utf-8') as f:
+        f.write(f'{a}; {b}\n')
     print('Dados cadastrados com sucesso!!!')
 
 def valida_id(idade):
