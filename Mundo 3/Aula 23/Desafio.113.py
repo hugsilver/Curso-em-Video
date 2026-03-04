@@ -1,29 +1,21 @@
-#Não consegui
-#Falta validar só está indo uma entrada
-#Ver resolução do Guana
 
-def leiaInt(n):
+def leiaInt():
+    while True:
+        try:
+            a = int(input('Digite um número inteiro: '))
+            return a
+        except (KeyboardInterrupt, ValueError, TypeError):
+            print('\033[0;31mERRO! Digite um número inteiro valido.\033[m')
 
-    valido = False
-    
-    try:
-        a = int(n)
-    except (KeyboardInterrupt, ValueError):
-        print('\033[0;31mERRO! Digite um número inteiro valido.\033[m')
-        return 0
-    else:
-        return n
+def leiaFloat():
+    while True:
+        try:
+            b = float(input('Digite um número real: '))
+            return b
+        except (KeyboardInterrupt, ValueError, TypeError):
+            print('\033[0;31mERRO! Digite um número real valido.\033[m')
 
-def leiaFloat(r):
-    try:
-        b = float(r)
-    except (KeyboardInterrupt, ValueError):
-        print('\033[0;31mERRO! Digite um número real valido.\033[m')
-        return 0
-    else:
-        return r
+j = leiaInt()
+f = leiaFloat()
 
-n = leiaInt(input('Digite um número inteiro: '))
-r = leiaFloat(input('Digite um número real: '))
-
-print(f'Você acabou de digitar os números - Inteiro: {n} e o Real: {r}')
+print(f'Você acabou de digitar os números - Inteiro: {j} e o Real: {f}')
