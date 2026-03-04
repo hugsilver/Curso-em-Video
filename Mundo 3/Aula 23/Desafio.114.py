@@ -1,4 +1,4 @@
-#Trabalhando
+"""
 import webbrowser
 import requests
 
@@ -16,7 +16,18 @@ def abrir_site(url):
         print('Obrigado por usar nossos serviços.')
 
 abrir_site('https://pudim.com.br')
+"""
 
+#Método Guana
+import urllib
+import urllib.request, urllib.error
+
+try:
+    site = urllib.request.urlopen('https://pudim.com.br') # Não deu certo usando essa biblioteca
+except urllib.error.URLError:
+    print('O site Pudim não está acessível no momento!!!')
+else:
+    print('Consegui acessar o site Pudim com sucesso!!!')
 
 
 
