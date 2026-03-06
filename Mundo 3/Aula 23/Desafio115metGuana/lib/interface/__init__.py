@@ -24,7 +24,7 @@ def menu(lista):
     cabeçalho('MENU PRINCIPAL')
     c = 1
     for item in lista:
-        print(f'{c} - {item}')
+        print(f'{c} - {item}') #Não coloquei a cor nessa porra
         c += 1
     print(linha())
     opc = leiaInt('Sua Opção: ')
