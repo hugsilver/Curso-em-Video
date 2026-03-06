@@ -1,10 +1,18 @@
-from Desafio115metGuana.lib.interface import * #Import * - Importa tuo
+from Desafio115metGuana.lib.interface import * #Import * - Importa tudo
+from Desafio115metGuana.lib.arquivo import *
 from time import sleep
+
+arq = r'C:\Users\u1012290\Documents\GitHub\Curso-em-Video\Mundo 3\Aula 23\cursoemvideo.txt'
+#Não se p1 não funcinou pelo script do Guana
+
+if not arquivoExiste(arq):
+    criarArquivo(arq)
 
 while True:
     resposta = menu(['Ver pessoas cadastradas', 'Cadastrar nova Pessoa', 'Sair do Sistema'])
     if resposta == 1:
-        cabeçalho('Opção 2')
+        #Opção de listar o conteúdo de um arquivo!
+        lerArquivo(arq)
     elif resposta == 2:
         cabeçalho('Opção 2')
     elif resposta == 3:

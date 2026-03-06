@@ -1,0 +1,4 @@
+Hugo; 32
+Keice; 31
+Maria; 5
+Pedro; 1
